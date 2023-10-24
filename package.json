@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:with-tests": "concurrently \"npm run dev\" \"npm run test:watch\"",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --check .",
     "preview": "vite preview",
-    "test": "jest --config jest.config.cjs"
+    "test": "jest --config jest.config.cjs",
+    "test:watch": "jest --config jest.config.cjs --watchAll"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -22,6 +24,7 @@
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
+    "concurrently": "^8.2.2",
     "esbuild-jest": "^0.5.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^9.0.0",
