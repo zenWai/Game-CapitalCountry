@@ -5,6 +5,10 @@
     <link rel="icon" type="image/png" href="/src/assets/iconquiz.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Country Capital Game</title>
+    <script type="module" defer>
+      import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
+      polyfillCountryFlagEmojis();
+    </script>
   </head>
   <body>
     <div id="root"></div>

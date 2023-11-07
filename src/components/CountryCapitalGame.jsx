@@ -43,6 +43,7 @@ const ButtonCountryCapitalGameStyle = styled.button`
     if ($isSelected) return 'blue';
     return 'inherit';
   }};
+  font-family: "Twemoji Country Flags", serif;
 `;
 
 function Buttons({
